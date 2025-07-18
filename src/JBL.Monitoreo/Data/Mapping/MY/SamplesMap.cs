@@ -29,32 +29,43 @@ public partial class SamplesMap
             .HasColumnType("int(11)");
 
         builder.Property(t => t.Timestamp)
+            .IsRequired()
             .HasColumnName("Timestamp")
             .HasColumnType("datetime");
 
         builder.Property(t => t.Oid)
+            .IsRequired()
             .HasColumnName("OID")
             .HasColumnType("varchar(30)")
             .HasMaxLength(30);
 
-        builder.Property(t => t.QName)
-            .HasColumnName("QName")
-            .HasColumnType("varchar(30)")
-            .HasMaxLength(30);
+        builder.Property(t => t.OName)
+            .IsRequired()
+            .HasColumnName("OName")
+            .HasColumnType("varchar(60)")
+            .HasMaxLength(60);
 
         builder.Property(t => t.Unit)
+            .IsRequired()
             .HasColumnName("Unit")
             .HasColumnType("varchar(15)")
             .HasMaxLength(15);
 
         builder.Property(t => t.Value)
+            .IsRequired()
             .HasColumnName("Value")
-            .HasColumnType("int(11)");
+            .HasColumnType("varchar(15)")
+            .HasMaxLength(15);
 
         builder.Property(t => t.Status)
             .IsRequired()
             .HasColumnName("Status")
             .HasColumnType("tinyint(4)");
+
+        builder.Property(t => t.Deleted)
+            .IsRequired()
+            .HasColumnName("Deleted")
+            .HasColumnType("tinyint(1)");
 
         // relationships
         #endregion
@@ -73,10 +84,11 @@ public partial class SamplesMap
         public const string DeviceID = "Device_ID";
         public const string Timestamp = "Timestamp";
         public const string Oid = "OID";
-        public const string QName = "QName";
+        public const string OName = "OName";
         public const string Unit = "Unit";
         public const string Value = "Value";
         public const string Status = "Status";
+        public const string Deleted = "Deleted";
     }
     #endregion
 }

@@ -26,18 +26,18 @@ public partial class DevicesMap
         builder.Property(t => t.Name)
             .IsRequired()
             .HasColumnName("Name")
-            .HasColumnType("varchar(50)")
-            .HasMaxLength(50);
+            .HasColumnType("varchar(15)")
+            .HasMaxLength(15);
 
         builder.Property(t => t.Alias)
             .HasColumnName("Alias")
-            .HasColumnType("varchar(50)")
-            .HasMaxLength(50);
+            .HasColumnType("varchar(60)")
+            .HasMaxLength(60);
 
         builder.Property(t => t.Community)
             .HasColumnName("Community")
-            .HasColumnType("varchar(50)")
-            .HasMaxLength(50);
+            .HasColumnType("varchar(30)")
+            .HasMaxLength(30);
 
         builder.Property(t => t.Disabled)
             .HasColumnName("Disabled")

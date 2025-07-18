@@ -16,17 +16,19 @@ public partial class Samples
 
     public int DeviceID { get; set; }
 
-    public DateTime? Timestamp { get; set; }
+    public DateTime Timestamp { get; set; }
 
-    public string? Oid { get; set; }
+    public string Oid { get; set; } = null!;
 
-    public string? QName { get; set; }
+    public string OName { get; set; } = null!;
 
-    public string? Unit { get; set; }
+    public string Unit { get; set; } = null!;
 
-    public int? Value { get; set; }
+    public string Value { get; set; } = null!;
 
     public sbyte Status { get; set; }
+
+    public bool Deleted { get; set; }
 
     #endregion
 
