@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JBL.Monitoreo", "JBL.Monitoreo\JBL.Monitoreo.csproj", "{0F41702E-2F7E-4D92-B113-C39EA8D76BBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F41702E-2F7E-4D92-B113-C39EA8D76BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F41702E-2F7E-4D92-B113-C39EA8D76BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F41702E-2F7E-4D92-B113-C39EA8D76BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F41702E-2F7E-4D92-B113-C39EA8D76BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1563B9B1-187B-439F-8D68-E2AD73489959}
+	EndGlobalSection
+EndGlobal

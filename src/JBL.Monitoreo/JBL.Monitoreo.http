@@ -1,0 +1,6 @@
+@JBL.Monitoreo_HostAddress = http://localhost:5065
+
+GET {{JBL.Monitoreo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
